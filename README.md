@@ -218,3 +218,7 @@ go vet ./...
 
 Built on [tcell](https://github.com/gdamore/tcell) and
 [go-runewidth](https://github.com/mattn/go-runewidth).
+
+## License
+
+Released under the [MIT License](LICENSE). Copyright (c) 2026 Cid Emmerich.
