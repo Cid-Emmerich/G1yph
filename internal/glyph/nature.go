@@ -16,7 +16,7 @@ func initnature() {
 		Def{Emoji: "☀️", Name: "sun", Blurb: "the sun with turning rays", Aliases: []string{"sunny", "sunshine", "day", "bright"}, New: stateless(func(p *paint.Painter, t, dt float64) { drawSun(p, t, false) })},
 		Def{Emoji: "🌞", Name: "sun face", Blurb: "a smiling sun", Aliases: []string{"happy sun", "sun with face"}, New: stateless(func(p *paint.Painter, t, dt float64) { drawSun(p, t, true) })},
 		Def{Emoji: "🌙", Name: "moon", Blurb: "a crescent moon under twinkling stars", Aliases: []string{"crescent", "night", "sleep", "🌛", "stars"}, New: stateless(drawMoon)},
-		Def{Emoji: "🌊", Name: "wave", Blurb: "rolling ocean waves", Aliases: []string{"ocean", "sea", "water", "surf", "tide"}, New: stateless(drawOcean)},
+		Def{Emoji: "🌊", Name: "ocean", Blurb: "rolling ocean waves", Aliases: []string{"waves", "sea", "water", "surf", "tide"}, New: stateless(drawOcean)},
 		Def{Emoji: "🌈", Name: "rainbow", Blurb: "a rainbow paints itself across the sky", Aliases: []string{"colours", "colors", "pride", "arc"}, New: stateless(drawRainbow)},
 		Def{Emoji: "⚡", Name: "bolt", Blurb: "high voltage", Aliases: []string{"lightning", "zap", "electric", "power", "energy"}, New: func() Anim { return &bolt{sparks: paint.NewSystem(53)} }},
 		Def{Emoji: "🌸", Name: "flower", Blurb: "a blossom opening", Aliases: []string{"blossom", "cherry blossom", "sakura", "bloom", "🌼", "🌺"}, New: func() Anim { return &flower{petals: paint.NewSystem(54)} }},
